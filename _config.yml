@@ -1,0 +1,97 @@
+# -----------------------------------
+# Basic Site Information
+# -----------------------------------
+title: "Dalila Boutoumilate"           
+# The title of the site, appears in the browser tab
+author: Dalila Boutoumilate            
+# name, used in posts and SEO
+description: "Learning, Research, and Reflections"  
+# Short description of the blog
+email: ""                              
+# Optional: email for contact or feeds
+url: "https://dalila-boutoumilate.github.io"  
+# The base URL of the site
+baseurl: ""                            # Leave empty if site is served from root of domain
+
+# -----------------------------------
+# Theme & Appearance
+# -----------------------------------
+theme: minima                          
+# Minimalistic theme, easy to customize
+#logo: "/assets/images/logo.png"        
+# Optional: logo path
+#favicon: "/assets/images/favicon.ico"  
+# Optional: favicon path
+
+# -----------------------------------
+# Build settings
+# -----------------------------------
+markdown: kramdown                     
+# Markdown parser
+highlighter: rouge                     
+# Syntax highlighter for code blocks
+permalink: /:categories/:title/        
+# URL structure for posts
+
+# -----------------------------------
+# Plugins
+# -----------------------------------
+plugins:
+  - jekyll-feed                        
+  # Generates RSS feed for your blog
+  - jekyll-seo-tag                     
+  # Adds SEO-friendly meta tags
+  - jekyll-sitemap                     
+  # Optional: generates sitemap.xml
+
+# -----------------------------------
+# Pagination (optional)
+# -----------------------------------
+paginate: 5                             
+# Number of posts per page
+paginate_path: "/page:num/"             
+# URL structure for pagination
+
+# -----------------------------------
+# Defaults
+# -----------------------------------
+defaults:
+  - scope:
+      path: ""                          
+      # Applies to all files
+      type: "posts"                     
+      # Default settings for blog posts
+    values:
+      layout: "post"
+      author: "Dalila Boutoumilate"
+
+# -----------------------------------
+# Exclude Files/Folders from Build
+# -----------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - README.md
+
+# -----------------------------------
+# Optional Settings for SEO & Social
+# -----------------------------------
+social_links:
+  twitter: ""                           
+  # Twitter handle 
+  linkedin: ""                          
+  #  LinkedIn URL
+  github: "https://github.com/dalila-boutoumilate"  
+  #  GitHub profile
+  
+# -----------------------------------
+# Navigation Menu
+# -----------------------------------
+minima:
+  navigation_links:
+    - title: "Home"
+      url: /
+    - title: "Notes"
+      url: /notes/
