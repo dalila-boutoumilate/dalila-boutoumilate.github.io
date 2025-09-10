@@ -75,23 +75,21 @@ exclude:
   - vendor/bundle
   - README.md
 
+
 # -----------------------------------
 # Optional Settings for SEO & Social
 # -----------------------------------
-social_links:
-  twitter: ""                           
-  # Twitter handle 
-  linkedin: ""                          
-  #  LinkedIn URL
-  github: "https://github.com/dalila-boutoumilate"  
-  #  GitHub profile
-  
-# -----------------------------------
-# Navigation Menu
-# -----------------------------------
 minima:
+  social_links:
+    github: dalila-boutoumilate
+    youtube: "@dalila-boutoumilate"   
+    # twitter: handle             
+    # optional
+    # linkedin: profile           
+    # optional
+
   navigation_links:
-    - title: "Home"
+    - title: "Blog"
       url: /
     - title: "Notes"
       url: /notes/

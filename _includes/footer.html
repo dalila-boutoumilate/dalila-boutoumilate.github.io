@@ -1,7 +1,25 @@
 <footer class="site-footer">
+
+  <!-- First line: site sections -->
   <p style="text-align:center; font-size:0.9em; color:#666;">
-    © 2025 Dalila Boutoumilate | 
-    <a href="/">Home</a> | 
+    © 2025 · 
+    <a href="/">Blog</a> · 
     <a href="/notes/">Notes</a>
   </p>
+
+  <!-- Second line: social icons -->
+  <div class="social-icons" style="text-align:center; margin-top:0.5em;">
+    {% if site.minima.social_links.github %}
+      <a href="https://github.com/{{ site.minima.social_links.github }}" aria-label="GitHub">
+        <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+      </a>
+    {% endif %}
+    {% if site.minima.social_links.youtube %}
+      <a href="https://youtube.com/{{ site.minima.social_links.youtube }}" aria-label="YouTube">
+        <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg>
+      </a>
+    {% endif %}
+    
+  </div>
+
 </footer>
